@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <script src="data.js"></script>
+    <script src="my.js"></script>
+    <title>LB3</title>
+</head>
+<body>
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Musical Instruments</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <section id="main">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12" size-md="6" offset-md="3">
+                    <ion-button id="add" color="success" size="large">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12" size-md="6" offset-md="3">
+                    <ion-list id="list">
+                        <ion-list-header>
+                            <ion-label>Instrument</ion-label>
+                        </ion-list-header>
+                    </ion-list>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+    <section id="edit">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12" size-md="6" offset-md="3">
+                    <ion-item>
+                        <ion-label position="floating">Instrument`s Name</ion-label>
+                        <ion-input id="number"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label position="floating">Instrument`s Maker</ion-label>
+                        <ion-input id="faculty"></ion-input>
+                    </ion-item>
+                    <ion-button id="save" color="primary" size="medium" float-right style="margin-top: 20px;">
+                        <ion-icon name="checkmark"></ion-icon>
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </section>
+</body>
+
+</html>
